@@ -18,8 +18,8 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
                 .chatId(chatId)
                 .photo(new InputFile(new File("primer.png").getAbsoluteFile()))
                 .parseMode(ParseMode.MARKDOWN)
-                .caption("Чтобы расчитать математическое значение по заданному алгоритму введите команду '/solve', где "
-                        + "первый аргумент это 'x', второй это 'a', а третий 'b'\n\n"
+                .caption("Чтобы рассчитать математическое значение по заданному алгоритму введите команду '/solve',"
+                        + "указав после него три аргумента через пробел\n\n"
                         + "Например, если 'x' = 11, 'a' = 4, 'b' = 8: '/solve 11 4 8'")
                 .build();
     }
