@@ -28,15 +28,16 @@ public class Solve extends BotCommand {
                 StringBuilder messageTextBuilder = new StringBuilder("`x = ");
 
                 double x = Double.parseDouble(arguments[0]);
-                messageTextBuilder.append(arguments[0]).append("`\n");
+                messageTextBuilder.append(x).append("`\n");
 
                 double a = Double.parseDouble(arguments[1]);
-                messageTextBuilder.append("`a = ").append(arguments[1]).append("`\n");
+                messageTextBuilder.append("`a = ").append(a).append("`\n");
 
                 double b = Double.parseDouble(arguments[2]);
-                messageTextBuilder.append("`b = ").append(arguments[2]).append("`\n\n");
+                messageTextBuilder.append("`b = ").append(b).append("`\n\n");
 
                 double result = solve(x, a, b);
+
                 messageTextBuilder.append("*y = ").append(result).append("*");
                 answer.setText(messageTextBuilder.toString());
 
